@@ -1,1 +1,2 @@
-# Here are your Instructions
+# MineHost-Local
+Minecriator - Minecraft Server Manager Desktop App
