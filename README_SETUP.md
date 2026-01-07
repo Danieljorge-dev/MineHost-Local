@@ -1,22 +1,52 @@
-# MineCriator - Minecraft Server Manager
+# MineHost Local - Minecraft Server Manager
 
-Um gerenciador de servidores Minecraft robusto e user-friendly com interface web moderna e suporte a desktop.
+Um gerenciador de servidores Minecraft robusto, local-first e **feito por dev para dev**. Interface moderna, controle total e zero dor de cabeça (mentira, só um pouquinho — afinal é Minecraft).
+
+> Sim, ele roda local. Sim, ele cria servidor. Sim, você vai esquecer ele aberto enquanto o PC vira um aquecedor.
 
 ## Características
 
-- 🖥️ **Interface Web Moderna** - Construída com React e Tailwind CSS
-- 🚀 **Backend em FastAPI** - API rápida e eficiente
-- 🖨️ **Desktop App** - Electron para Linux (.deb, AppImage)
-- 🔧 **Gerenciamento Completo** - Criar, iniciar, parar e deletar servidores
-- 📊 **Monitoramento em Tempo Real** - WebSocket para logs ao vivo
-- 🌐 **Interface Responsiva** - Funciona em todos os tamanhos de tela
+* 🖥️ **Interface Moderna (Dark Theme Lover)** — React + Tailwind CSS, porque CSS puro é sofrimento
+* 🚀 **Backend em FastAPI** — rápido como Creeper silencioso
+* 🧠 **Gerenciamento Completo** — criar, iniciar, parar, importar e deletar servidores
+* 📊 **Monitoramento em Tempo Real** — logs ao vivo via WebSocket (spam incluído)
+* 🖨️ **App Desktop** — Electron para Linux (.deb e AppImage)
+* 🌐 **Responsivo** — funciona até naquele monitor velho que você jura que vai trocar
+
+## Capturas de Tela
+
+### Painel Principal
+
+![Painel Principal](./docs/screenshots/painel.png)
+
+> Visão geral dos seus servidores. Simples, bonito e pronto para te julgar quando algo estiver offline.
+
+### Criar Novo Servidor – Tipo
+
+![Criar Servidor - Tipo](./docs/screenshots/criar-tipo.png)
+
+> Vanilla, Paper, Fabric ou Forge. Escolha com sabedoria (ou aleatoriamente, como todo mundo).
+
+### Criar Novo Servidor – Versão
+
+![Criar Servidor - Versão](./docs/screenshots/criar-versao.png)
+
+> Snapshots, releases, pré-releases… porque viver perigosamente faz parte da experiência.
+
+### Servidor Criado
+
+![Servidor Criado](./docs/screenshots/servidor.png)
+
+> IP copiado, botão de iniciar pronto e aquela falsa sensação de controle.
 
 ## Instalação
 
 ### Pré-requisitos
-- Node.js 18+
-- Python 3.9+
-- Yarn ou npm
+
+* Node.js 18+
+* Python 3.9+
+* Yarn ou npm
+* Java 17+ (sem Java não tem Minecraft, sem choro)
 
 ### Instalação Local (Desenvolvimento)
 
@@ -31,7 +61,7 @@ yarn install
 # Setup Backend
 cd ..
 python3 -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r backend/requirements.txt
 ```
 
@@ -39,14 +69,16 @@ pip install -r backend/requirements.txt
 
 ### Opção 1: Web (Desenvolvimento)
 
-Terminal 1 - Backend:
+**Terminal 1 – Backend**
+
 ```bash
 cd Server-MineCriator-main
 source venv/bin/activate
 uvicorn backend.server:app --host 0.0.0.0 --port 5000 --reload
 ```
 
-Terminal 2 - Frontend:
+**Terminal 2 – Frontend**
+
 ```bash
 cd Server-MineCriator-main/frontend
 yarn start
@@ -62,128 +94,65 @@ cd Server-MineCriator-main/frontend
 # Desenvolvimento com hot reload
 yarn electron-dev
 
-# Build para desktop
+# Build desktop
 yarn electron-build
 ```
 
-### Opção 3: Build Distribuível
+### Opção 3: Build Distribuível (Linux)
 
 ```bash
 cd Server-MineCriator-main/frontend
-
-# Build AppImage e .deb para Linux
 yarn dist
 ```
 
-Arquivos gerados em `dist/`:
-- `MineCriator.AppImage` - Executável único (sem instalação)
-- `MineCriator.deb` - Pacote Debian (instalável)
+Gerados em `dist/`:
+
+* `MineHost-Local.AppImage`
+* `minehost-local.deb`
 
 ## Estrutura do Projeto
 
 ```
 Server-MineCriator-main/
-├── frontend/              # Aplicação React
-│   ├── src/
-│   ├── public/
-│   └── package.json
-├── backend/               # Servidor FastAPI
-│   ├── server.py
-│   ├── requirements.txt
-│   └── data/
+├── frontend/              # React + Electron
+├── backend/               # FastAPI
 ├── electron/              # Configuração Electron
-│   ├── main.js
-│   └── preload.js
-└── venv/                  # Ambiente Python
+├── docs/screenshots/      # Prints bonitos para o README
+└── venv/
 ```
 
 ## API Endpoints
 
-- `GET /api/servers` - Lista todos os servidores
-- `POST /api/servers` - Criar novo servidor
-- `GET /api/servers/{id}` - Detalhes do servidor
-- `POST /api/servers/{id}/start` - Iniciar servidor
-- `POST /api/servers/{id}/stop` - Parar servidor
-- `GET /api/servers/{id}/logs` - Logs do servidor
-- `WS /ws/servers/{id}` - WebSocket para logs em tempo real
+* `GET /api/servers`
+* `POST /api/servers`
+* `POST /api/servers/{id}/start`
+* `POST /api/servers/{id}/stop`
+* `GET /api/servers/{id}/logs`
+* `WS /ws/servers/{id}`
 
-Documentação Swagger: `http://localhost:5000/docs`
-
-## Configuração Ambiente
-
-Crie um arquivo `.env` na raiz do projeto:
-
-```env
-# Backend
-BACKEND_PORT=5000
-BACKEND_HOST=0.0.0.0
-
-# Frontend
-REACT_APP_BACKEND_URL=http://localhost:5000
-```
+Swagger: `http://localhost:5000/docs`
 
 ## Troubleshooting
 
-**Erro: "Porta 5000 em uso"**
+**"Java não encontrado"**
+
 ```bash
-# Find and kill process
-lsof -i :5000
-kill -9 <PID>
+java -version
 ```
 
-**Erro: "Módulos Python não encontrados"**
-```bash
-source venv/bin/activate
-pip install -r backend/requirements.txt
-```
+Se não funcionar: instale Java 17 e finja que sempre soube disso.
 
 **Electron não inicia**
+
 ```bash
-# Deletar cache do Electron
-rm -rf ~/.config/MineCriator
+rm -rf ~/.config/MineHost\ Local
 yarn electron-dev
 ```
 
-## Desenvolvimento
-
-### Adicionar Novo Endpoint
-
-1. Editar `backend/server.py`
-2. Recarregar automaticamente (uvicorn watch)
-3. Testar em `http://localhost:5000/docs`
-
-### Modificar Frontend
-
-1. Editar em `frontend/src/`
-2. Hot reload automático (yarn start)
-3. Ver mudanças em tempo real
-
-## Build para Produção
-
-### Build Web
-```bash
-cd frontend
-yarn build
-```
-
-Arquivos em `frontend/build/`
-
-### Build Desktop
-```bash
-cd frontend
-yarn dist
-```
-
-Arquivos em `frontend/dist/`
-
 ## Licença
 
-Propriedade privada - Desenvolvido internamente
-
-## Suporte
-
-Para problemas ou dúvidas, abra uma issue ou entre em contato com o time de desenvolvimento.
+GNU General Public License (GPL)
 
 ---
 
-**MineCriator** - Gerenciamento de Servidores Minecraft, Simples e Poderoso
+**MineHost Local** — porque subir servidor Minecraft manualmente em 2026 já é crime moral.
