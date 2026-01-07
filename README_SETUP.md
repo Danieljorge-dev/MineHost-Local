@@ -17,7 +17,7 @@ Um gerenciador de servidores Minecraft robusto, local-first e **feito por dev pa
 
 ### Painel Principal
 
-![Painel Principal](./docs/screenshots/painel.png)
+![Painel Principal](./docs/screenshots/painel1.png)
 
 > Visão geral dos seus servidores. Simples, bonito e pronto para te julgar quando algo estiver offline.
 
