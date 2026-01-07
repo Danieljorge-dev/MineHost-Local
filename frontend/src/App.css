@@ -1,0 +1,179 @@
+/* App-specific styles */
+
+.server-card {
+  @apply relative overflow-hidden transition-all duration-300;
+}
+
+.server-card:hover {
+  @apply scale-[1.02];
+}
+
+.server-card:hover .server-card-border {
+  @apply opacity-100;
+}
+
+.server-card-border {
+  @apply absolute inset-0 rounded-xl border-2 border-primary/50 opacity-0 transition-opacity duration-300 pointer-events-none;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Console styles */
+.console-container {
+  @apply font-mono text-sm leading-relaxed;
+}
+
+.console-line {
+  @apply py-0.5 px-2 hover:bg-white/5 transition-colors;
+}
+
+.console-timestamp {
+  @apply text-muted-foreground mr-2 select-none;
+}
+
+/* Wizard styles */
+.wizard-step {
+  @apply opacity-50 transition-opacity duration-300;
+}
+
+.wizard-step.active {
+  @apply opacity-100;
+}
+
+.wizard-step.completed {
+  @apply opacity-100;
+}
+
+/* Properties editor */
+.property-row {
+  @apply flex items-center gap-4 py-3 px-4 rounded-lg transition-colors;
+}
+
+.property-row:hover {
+  @apply bg-secondary/50;
+}
+
+/* Mod/Plugin cards */
+.mod-card {
+  @apply p-4 rounded-xl bg-card border border-border transition-all duration-200;
+}
+
+.mod-card:hover {
+  @apply border-primary/50 shadow-lg;
+}
+
+/* Status badges */
+.status-badge {
+  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium;
+}
+
+.status-badge-running {
+  @apply bg-emerald-500/20 text-emerald-400;
+}
+
+.status-badge-stopped {
+  @apply bg-zinc-500/20 text-zinc-400;
+}
+
+.status-badge-downloading {
+  @apply bg-amber-500/20 text-amber-400;
+}
+
+.status-badge-error {
+  @apply bg-red-500/20 text-red-400;
+}
+
+/* Server type cards */
+.type-card {
+  @apply relative p-6 rounded-xl border-2 border-border bg-card/50 cursor-pointer transition-all duration-200;
+}
+
+.type-card:hover {
+  @apply border-primary/30 bg-card;
+}
+
+.type-card.selected {
+  @apply border-primary bg-primary/10;
+}
+
+.type-card.selected::before {
+  content: '';
+  @apply absolute inset-0 rounded-xl;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+/* MOTD Preview */
+.motd-preview {
+  @apply font-mono text-sm p-4 rounded-lg bg-zinc-900 border border-zinc-800;
+  image-rendering: pixelated;
+}
+
+/* Server icon */
+.server-icon {
+  @apply w-16 h-16 rounded-lg object-cover;
+  image-rendering: pixelated;
+}
+
+/* Navigation */
+.nav-item {
+  @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-muted-foreground transition-colors;
+}
+
+.nav-item:hover {
+  @apply bg-secondary text-foreground;
+}
+
+.nav-item.active {
+  @apply bg-primary/20 text-primary;
+}
+
+/* Panel tabs */
+.panel-tab {
+  @apply px-4 py-2 text-muted-foreground transition-colors rounded-t-lg;
+}
+
+.panel-tab:hover {
+  @apply text-foreground;
+}
+
+.panel-tab.active {
+  @apply text-primary bg-card border-t border-l border-r border-border;
+}
+
+/* Animations */
+@keyframes server-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.status-indicator-running {
+  animation: server-pulse 2s ease-in-out infinite;
+}
+
+/* Theme transition */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Custom scrollbar for console */
+.console-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.console-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.console-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.console-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

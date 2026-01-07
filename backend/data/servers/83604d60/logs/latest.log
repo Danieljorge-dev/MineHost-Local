@@ -1,0 +1,233 @@
+[21:08:26] [main/INFO]: Loading Minecraft 1.21.9 with Fabric Loader 0.18.4
+[21:08:26] [main/INFO]: Loading 125 mods:
+	- architectury 18.0.5
+	- bettervillage 3.3.1
+	- chunky 1.4.52
+	- e4mc_minecraft 5.5.4
+	   \-- folk_sisby_kaleido-config 0.3.3+1.3.2
+	- fabric-api 0.134.1+1.21.9
+	   |-- fabric-api-base 1.0.0+14b92d897d
+	   |-- fabric-api-lookup-api-v1 1.6.106+d17682157d
+	   |-- fabric-biome-api-v1 16.1.0+c2417d4f7d
+	   |-- fabric-block-api-v1 1.1.5+d17682157d
+	   |-- fabric-block-view-api-v2 1.0.34+e4fd1b927d
+	   |-- fabric-command-api-v2 2.3.7+328a75ba7d
+	   |-- fabric-content-registries-v0 10.2.3+b6a242647d
+	   |-- fabric-convention-tags-v1 2.1.47+7f945d5b7d
+	   |-- fabric-convention-tags-v2 2.15.12+3154c1c87d
+	   |-- fabric-crash-report-info-v1 0.3.18+33df5e6e7d
+	   |-- fabric-data-attachment-api-v1 1.8.28+9bce411b7d
+	   |-- fabric-data-generation-api-v1 23.2.22+d8b85ef17d
+	   |-- fabric-dimensions-v1 4.0.22+38b9cc197d
+	   |-- fabric-entity-events-v1 2.1.12+14b92d897d
+	   |-- fabric-events-interaction-v0 4.0.35+5ba217127d
+	   |-- fabric-game-rule-api-v1 1.1.1+e47eaae57d
+	   |-- fabric-item-api-v1 11.5.8+9bce411b7d
+	   |-- fabric-item-group-api-v1 4.2.24+86b3ae577d
+	   |-- fabric-key-binding-api-v1 1.1.1+b3ba9c487d
+	   |-- fabric-lifecycle-events-v1 2.6.9+33df5e6e7d
+	   |-- fabric-loot-api-v2 3.0.64+3f89f5a57d
+	   |-- fabric-loot-api-v3 2.0.11+d17682157d
+	   |-- fabric-message-api-v1 6.1.7+3154c1c87d
+	   |-- fabric-model-loading-api-v1 6.0.1+3ffd6ef07d
+	   |-- fabric-networking-api-v1 5.0.13+d269470c7d
+	   |-- fabric-object-builder-api-v1 21.1.24+9bce411b7d
+	   |-- fabric-particles-v1 4.2.2+a0ee59a47d
+	   |-- fabric-recipe-api-v1 8.1.26+d17682157d
+	   |-- fabric-registry-sync-v0 6.1.41+679c8c5c7d
+	   |-- fabric-renderer-api-v1 7.1.2+c523dc837d
+	   |-- fabric-renderer-indigo 4.0.20+c523dc837d
+	   |-- fabric-rendering-fluids-v1 3.1.38+86b3ae577d
+	   |-- fabric-rendering-v1 16.0.1+328a75ba7d
+	   |-- fabric-resource-conditions-api-v1 5.0.28+33df5e6e7d
+	   |-- fabric-resource-loader-v0 3.2.2+3388a3b27d
+	   |-- fabric-resource-loader-v1 1.0.2+225bca407d
+	   |-- fabric-screen-api-v1 3.1.0+9c82a7987d
+	   |-- fabric-screen-handler-api-v1 1.3.150+d17682157d
+	   |-- fabric-serialization-api-v1 1.0.0+d857c9767d
+	   |-- fabric-sound-api-v1 1.0.45+328a75ba7d
+	   |-- fabric-tag-api-v1 1.2.10+2fa446b27d
+	   |-- fabric-transfer-api-v1 6.0.15+79ec2c127d
+	   \-- fabric-transitive-access-wideners-v1 6.5.3+41eb43437d
+	- fabric-language-kotlin 1.13.8+kotlin.2.3.0
+	   |-- org_jetbrains_kotlin_kotlin-reflect 2.3.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 2.3.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.3.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.3.0
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.29.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.7.1
+	   |-- org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm 0.8.2
+	   |-- org_jetbrains_kotlinx_kotlinx-io-core-jvm 0.8.2
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.9.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.9.0
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.9.0
+	- fabricloader 0.18.4
+	   \-- mixinextras 0.5.0
+	- fallingtree 1.21.9.3
+	- ferritecore 8.0.2
+	- floodgate 2.2.6-SNAPSHOT
+	   |-- aopalliance_aopalliance 1.0
+	   |-- com_google_guava_failureaccess 1.0.1
+	   |-- fabric-permissions-api-v0 0.4.1
+	   |-- jakarta_inject_jakarta_inject-api 2.0.1
+	   |-- javax_inject_javax_inject 1
+	   |-- org_geysermc_cumulus_cumulus 1.1.2
+	   |-- org_geysermc_event_events 1.1-SNAPSHOT
+	   |-- org_geysermc_geyser_common_unshaded 2.2.1-SNAPSHOT
+	   |-- org_java-websocket_java-websocket 1.5.2
+	   \-- org_lanternpowered_lmbda 2.0.0
+	- geyser-fabric 2.9.2-SNAPSHOT
+	   |-- cloud 2.0.0-beta.13
+	   |    |-- io_leangen_geantyref_geantyref 1.3.15
+	   |    |-- org_incendo_cloud-brigadier 2.0.0-beta.11
+	   |    |-- org_incendo_cloud-core 2.0.0
+	   |    |-- org_incendo_cloud-minecraft-modded-common-fabric-repack 2.0.0-beta.13
+	   |    \-- org_incendo_cloud-services 2.0.0
+	   |-- com_google_errorprone_error_prone_annotations 2.27.0
+	   |-- com_nukkitx_natives 1.0.3
+	   |-- fabric-permissions-api-v0 0.4.1
+	   |-- io_airlift_aircompressor 0.27
+	   |-- io_netty_netty-codec-haproxy 4.2.7
+	   |-- net_jodah_expiringmap 0.5.10
+	   |-- net_kyori_adventure-api 4.25.0
+	   |-- net_kyori_adventure-key 4.25.0
+	   |-- net_kyori_adventure-nbt 4.25.0
+	   |-- net_kyori_adventure-text-serializer-commons 4.25.0
+	   |-- net_kyori_adventure-text-serializer-gson 4.25.0
+	   |-- net_kyori_adventure-text-serializer-json 4.25.0
+	   |-- net_kyori_adventure-text-serializer-json-legacy-impl 4.25.0
+	   |-- net_kyori_adventure-text-serializer-legacy 4.25.0
+	   |-- net_kyori_adventure-text-serializer-plain 4.25.0
+	   |-- net_kyori_examination-api 1.3.0
+	   |-- net_kyori_examination-string 1.3.0
+	   |-- net_kyori_option 1.1.0
+	   |-- net_lenni0451_commons_gson 1.9.0
+	   |-- net_lenni0451_commons_httpclient 1.9.0
+	   |-- net_raphimc_minecraftauth 5.0.0
+	   |-- org_bitbucket_b_c_jose4j 0.9.6
+	   |-- org_bstats_bstats-base 3.1.0
+	   |-- org_cloudburstmc_math_api 2.0
+	   |-- org_cloudburstmc_math_immutable 2.0
+	   |-- org_cloudburstmc_nbt 3.0.3
+	   |-- org_geysermc_api_base-api 1.0.2
+	   |-- org_geysermc_cumulus_cumulus 1.1.2
+	   |-- org_geysermc_event_events 1.1-SNAPSHOT
+	   \-- org_lanternpowered_lmbda 2.0.0
+	- java 21
+	- libraryferret 4.0.0
+	- minecraft 1.21.9
+	- placeable_food 3.0.0
+	- servercore 1.5.14+1.21.9
+	   |-- fabric-permissions-api-v0 0.4.1
+	   |-- org_yaml_snakeyaml 2.5
+	   |-- placeholder-api 2.8.0+1.21.9
+	   |-- space_arim_dazzleconf_dazzleconf-core 1.3.0-M2
+	   \-- space_arim_dazzleconf_dazzleconf-ext-snakeyaml 1.3.0-M2
+	- silk-all 1.11.4
+	   |-- silk-commands 1.11.4
+	   |-- silk-core 1.11.4
+	   |-- silk-game 1.11.4
+	   |-- silk-igui 1.11.4
+	   |-- silk-nbt 1.11.4
+	   |-- silk-network 1.11.4
+	   \-- silk-persistence 1.11.4
+	- skinrestorer 2.4.3+1.21.9-fabric
+	   \-- org_mineskin_java-client 3.0.6-SNAPSHOT
+	- veinminer 2.5.0
+	   \-- de_miraculixx_core_dev 2.5.0
+[21:08:26] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/djbug/Downloads/Server-MineCriator-main/backend/data/servers/83604d60/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[21:08:26] [main/INFO]: Compatibility level set to JAVA_16
+[21:08:26] [main/INFO]: Compatibility level set to JAVA_21
+[21:08:27] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[21:08:32] [main/INFO]: Carregando extensões...
+[21:08:32] [main/INFO]: 0 extensão(ões) carregada
+[21:08:32] [main/INFO]: Initialize mod Library Ferret
+[21:08:32] [main/INFO]: Initialized mod Library Ferret
+[21:08:32] [main/INFO]: Initializing MagicVibeDecorationsMod
+[21:08:33] [main/INFO]: [ServerCore] Loaded V1.5.14+1.21.9!
+[21:08:33] [main/INFO]: Initializing Silk
+[21:08:33] [main/INFO]: Veinminer Version: 2.5.0 (fabric)
+[21:08:33] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[21:08:33] [main/INFO]: StructureSet modified for minecraft:village : Now using custom village configuration (can be disabled in the better villages config: boolean.villages.enabled_custom_config).
+[21:08:34] [DefaultDispatcher-worker-1/INFO]: [STDOUT]: [VeinminerUpdater] veinminer is up to date
+[21:08:34] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/beetrots' from 'placeable_food:loot_table/blocks/beetrots.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:beetrots': net.minecraft.class_52@766a60e8]
+[21:08:34] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/bp_5' from 'placeable_food:loot_table/blocks/bp_5.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:bp_5': net.minecraft.class_52@553e18a]
+[21:08:34] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/ms' from 'placeable_food:loot_table/blocks/ms.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms': net.minecraft.class_52@798e7d4f]
+[21:08:34] [Worker-Main-1/ERROR]: Couldn't parse data file 'placeable_food:mixrec_1' from 'placeable_food:recipe/mixrec_1.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms']
+[21:08:34] [Worker-Main-1/ERROR]: Couldn't parse data file 'placeable_food:mixrec_2' from 'placeable_food:recipe/mixrec_2.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms']
+[21:08:34] [main/INFO]: Loaded 1503 recipes
+[21:08:34] [main/INFO]: Loaded 1574 advancements
+[21:08:35] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 977.6 μs
+[21:08:35] [Server thread/INFO]: Initialized mcCoroutineScope (MinecraftServer as executor)
+[21:08:35] [Server thread/INFO]: Starting minecraft server version 1.21.9
+[21:08:35] [Server thread/INFO]: Loading properties
+[21:08:35] [Server thread/INFO]: Default game type: SURVIVAL
+[21:08:35] [Server thread/INFO]: Generating keypair
+[21:08:35] [Server thread/INFO]: Starting Minecraft server on *:2314
+[21:08:35] [Server thread/INFO]: Using epoll channel type
+[21:08:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:08:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:08:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:08:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:08:35] [e4mc_minecraft-init/INFO]: req: https://broker.e4mc.link/getBestRelay GET
+[21:08:35] [Server thread/INFO]: Preparing level "world"
+[21:08:35] [Server thread/INFO]: Loading 0 persistent chunks...
+[21:08:35] [Server thread/INFO]: Preparing spawn area: 100%
+[21:08:35] [Server thread/INFO]: Time elapsed: 90 ms
+[21:08:35] [Server thread/INFO]: Done (0.360s)! For help, type "help"
+[21:08:35] [Server thread/INFO]: Demorou 43ms para inicializar o Floodgate
+[21:08:36] [Server thread/INFO]: ******************************************
+[21:08:36] [Server thread/INFO]: 
+[21:08:36] [Server thread/INFO]: Carregando Geyser versão 2.9.2-b1008 (git-master-d35667a)
+[21:08:36] [Server thread/INFO]: 
+[21:08:36] [Server thread/INFO]: ******************************************
+[21:08:36] [e4mc_minecraft-init/INFO]: resp: (GET https://broker.e4mc.link/getBestRelay) 200
+[21:08:36] [e4mc_minecraft-init/INFO]: using relay cl
+[21:08:36] [e4mc_minecraft-init/INFO]: Using configured namedGroups -D 'jdk.tls.namedGroup': [secp384r1] 
+[21:08:36] [Netty Epoll Server IO #1/INFO]: control channel open: [id: 0x0f5c2f23, QuicStreamAddress{streamId=0}]
+[21:08:36] [Netty Epoll Server IO #1/INFO]: control channel write complete
+[21:08:37] [Netty Epoll Server IO #1/WARN]: e4mc running on Dedicated Server; This works, but isn't recommended as e4mc is designed for short-lived LAN servers
+[21:08:37] [Netty Epoll Server IO #1/INFO]: Domain assigned: baguette-fritter.cl.e4mc.link
+[21:08:38] [GeyserServer-3-1/INFO]: Geyser iniciado na porta UDP 19132
+[21:08:38] [Server thread/INFO]: Concluído (2,377 s)! Execute /geyser help para obter ajuda!
+[21:08:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2981ms or 59 ticks behind
+[21:09:22] [Server thread/INFO]: DJbug_[QuicStreamAddress{streamId=1}] logged in with entity id 47 at (-10.755638781662617, 110.0, -6.8627444886690245)
+[21:09:22] [Server thread/INFO]: DJbug_ joined the game
+[21:09:56] [Server thread/INFO]: DJbug_ has made the advancement [Monster Hunter]
+[21:13:59] [Server thread/INFO]: DJbug_ has made the advancement [Stone Age]
+[21:23:58] [Server thread/INFO]: Set the time to 1000
+[21:24:33] [Server thread/INFO]: Unknown item 'minecraft:chiquen'
+[21:24:33] [Server thread/INFO]: give @s chiquen<--[HERE]
+[21:25:22] [Server thread/INFO]: No player was found
+[21:25:31] [Server thread/INFO]: No player was found
+[21:25:48] [Server thread/INFO]: Unknown selector type '@D'
+[21:25:48] [Server thread/INFO]: give @DJbug_ chicken<--[HERE]
+[21:26:08] [Server thread/INFO]: No player was found
+[21:26:27] [Server thread/INFO]: Made DJbug_ a server operator
+[21:26:58] [Server thread/INFO]: [DJbug_: Gave 1 [Raw Chicken] to DJbug_]
+[21:28:05] [Server thread/INFO]: [DJbug_: Gave 10 [Raw Chicken] to DJbug_]
+[21:28:17] [Server thread/INFO]: Made DJbug_ no longer a server operator
+[21:29:05] [Server thread/INFO]: DJbug_ has made the advancement [Getting an Upgrade]
+[21:34:23] [Server thread/INFO]: Set the time to 1000
+[21:36:33] [Server thread/INFO]: DJbug_ lost connection: Disconnected
+[21:36:33] [Server thread/INFO]: DJbug_ left the game
+[21:36:34] [Server thread/INFO]: DJbug_[/127.0.0.1:44670] logged in with entity id 5106 at (-138.32892493234314, 77.0, -401.69999998807907)
+[21:36:34] [Server thread/INFO]: DJbug_ joined the game
+[21:36:42] [Server thread/INFO]: DJbug_ lost connection: Disconnected
+[21:36:42] [Server thread/INFO]: DJbug_ left the game
+[21:36:54] [Server thread/INFO]: Stopping the server
+[21:36:54] [Server thread/INFO]: Desligando o Geyser.
+[21:36:55] [Server thread/INFO]: Geyser encerrado com sucesso.
+[21:36:55] [WebSocketConnectReadThread-110/INFO]: The skin uploader has been closed
+[21:36:57] [Server thread/INFO]: Stopping server
+[21:36:57] [Server thread/INFO]: Saving players
+[21:36:57] [Server thread/INFO]: Saving worlds
+[21:36:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:36:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:36:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

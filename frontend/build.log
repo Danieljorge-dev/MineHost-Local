@@ -1,0 +1,7 @@
+  • electron-builder  version=26.0.12 os=6.8.0-90-generic
+  • loaded configuration  file=package.json ("build" field)
+  • loaded parent configuration  preset=react-cra
+  • executing @electron/rebuild  electronVersion=39.2.7 arch=x64 buildFromSource=false appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=linux arch=x64 electron=39.2.7 appOutDir=dist/linux-unpacked

@@ -1,0 +1,126 @@
+{
+  "typography": {
+    "headings": {
+      "family": "Chivo, sans-serif",
+      "weights": ["700", "900"],
+      "usage": "Main page titles, server names, modal headers. Use tracking-tight."
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "General UI text, descriptions, form labels."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "usage": "Server console logs, IP addresses, file paths, JSON editors."
+    }
+  },
+  "colors": {
+    "palette_name": "Obsidian & Ores",
+    "mode": "dark",
+    "base": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "card": "#121214",
+      "card_foreground": "#ffffff",
+      "popover": "#0c0c0e",
+      "border": "#27272a"
+    },
+    "brand": {
+      "primary": "#3b82f6",
+      "primary_foreground": "#ffffff",
+      "secondary": "#27272a",
+      "accent": "#10b981",
+      "destructive": "#ef4444"
+    },
+    "semantic": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6",
+      "console_bg": "#050505",
+      "console_text": "#4ade80"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "usage": "Overlays, sticky headers, toast notifications",
+      "classes": "bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl"
+    },
+    "neon_borders": {
+      "usage": "Active server cards, selected inputs",
+      "classes": "border-primary/50 shadow-[0_0_15px_rgba(59,130,246,0.3)]"
+    },
+    "textures": {
+      "noise": "Add a subtle noise texture overlay to the main background to prevent banding and add 'grit'.",
+      "scanlines": "Optional low-opacity scanline overlay on the Console component."
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "sharp": "rounded-sm"
+    }
+  },
+  "grids": {
+    "dashboard": {
+      "type": "Bento Grid",
+      "classes": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "description": "Asymmetric grid. Server cards take 1 unit. Status summary takes 2 units (horizontal)."
+    },
+    "mod_browser": {
+      "type": "Masonry/Dense",
+      "classes": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
+      "description": "Dense grid for mod cards. Images on top, compact text below."
+    }
+  },
+  "components": {
+    "server_card": {
+      "path": "src/components/dashboard/ServerCard.jsx",
+      "style": "Cardless look or deep slate card. Top half is a cover image (use abstract block 3D). Bottom half is details. Status indicator is a glowing dot.",
+      "interaction": "Hover: Scale up 1.02, border glows primary color."
+    },
+    "console_widget": {
+      "path": "src/components/server/Console.jsx",
+      "style": "Terminal aesthetic. Black background, JetBrains Mono font. Scrollbar hidden but functional. 'Pause' on hover.",
+      "features": "Auto-scroll to bottom, color-coded log levels (INFO=blue, WARN=yellow, ERROR=red)."
+    },
+    "wizard_step": {
+      "path": "src/components/create/WizardStep.jsx",
+      "style": "Left panel: Context/Help. Right panel: Form inputs. Smooth transition between steps."
+    }
+  },
+  "image_urls": {
+    "hero_abstract": {
+      "url": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Blue 3D cubes. Use for 'Vanilla' or default server cover.",
+      "category": "cover"
+    },
+    "modded_abstract": {
+      "url": "https://images.unsplash.com/photo-1656332429198-ef6adbe93857?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Red/Black 3D structure. Use for 'Forge/Fabric' server covers.",
+      "category": "cover"
+    },
+    "landscape_bg": {
+      "url": "https://images.unsplash.com/photo-1704229266209-47d8d6ad0c46?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Dark city/tech aerial. Use as subtle background for the 'Create Server' wizard.",
+      "category": "background"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add '@fontsource/chivo', '@fontsource/manrope', and '@fontsource/jetbrains-mono' to package.json immediately.",
+    "2. TAILWIND CONFIG: Update tailwind.config.js to use the 'Obsidian' color palette defined above. Extend the font family theme.",
+    "3. SHADCN OVERRIDE: When using Shadcn components (Button, Card, Dialog), override the default 'radius' and 'border' to match the 'visual_enhancers' section. Make borders darker and subtler.",
+    "4. CONSOLE LOGIC: The console component must use 'react-virtuoso' or similar if logs get huge, but for local MVP, a simple mapped div with 'ref' for auto-scroll is fine. Style it like a hacker terminal.",
+    "5. NO WHITE BACKGROUNDS: Never use pure white (#ffffff) for backgrounds. Use #fafafa for text only. Backgrounds must be dark.",
+    "6. DATA-TESTID: Every interactive element (buttons, inputs, server cards) MUST have a data-testid attribute (e.g., 'server-card-survival', 'btn-start-server').",
+    "7. ICONS: Use 'lucide-react' for UI icons (Settings, Play, Stop, Terminal).",
+    "8. ANIMATION: Use 'framer-motion' for page transitions and modal appearances. Simple fades and slides."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic 'AI slop' designs. No centered text on dashboards.",
+    "Use 2-3x more padding than you think is necessary.",
+    "Dark mode is the default. Light mode is secondary.",
+    "Micro-interactions are mandatory (hover states, focus rings).",
+    "Do not use emoji as icons. Use Lucide React."
+  ]
+}
