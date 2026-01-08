@@ -29,13 +29,13 @@ Um gerenciador de servidores Minecraft robusto, local-first e **feito por dev pa
 
 ### Criar Novo Servidor – Versão
 
-![Criar Servidor - Versão](./docs/screenshots/criar-versao.png)
+![Criar Servidor - Versão](./docs/screenshots/servidor.png)
 
 > Snapshots, releases, pré-releases… porque viver perigosamente faz parte da experiência.
 
 ### Servidor Criado
 
-![Servidor Criado](./docs/screenshots/servidor.png)
+![Servidor Criado](./docs/screenshots/painel1.png)
 
 > IP copiado, botão de iniciar pronto e aquela falsa sensação de controle.
 
