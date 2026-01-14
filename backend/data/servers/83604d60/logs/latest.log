@@ -1,8 +1,9 @@
-[21:08:26] [main/INFO]: Loading Minecraft 1.21.9 with Fabric Loader 0.18.4
-[21:08:26] [main/INFO]: Loading 125 mods:
+[16:30:57] [main/INFO]: Loading Minecraft 1.21.9 with Fabric Loader 0.18.4
+[16:30:57] [main/INFO]: Loading 130 mods:
 	- architectury 18.0.5
 	- bettervillage 3.3.1
 	- chunky 1.4.52
+	- collective 8.9
 	- e4mc_minecraft 5.5.4
 	   \-- folk_sisby_kaleido-config 0.3.3+1.3.2
 	- fabric-api 0.134.1+1.21.9
@@ -115,8 +116,10 @@
 	   |-- org_geysermc_cumulus_cumulus 1.1.2
 	   |-- org_geysermc_event_events 1.1-SNAPSHOT
 	   \-- org_lanternpowered_lmbda 2.0.0
+	- improved_village_placement 1.1.2
 	- java 21
 	- libraryferret 4.0.0
+	- lithostitched 1.5.2+patched
 	- minecraft 1.21.9
 	- placeable_food 3.0.0
 	- servercore 1.5.14+1.21.9
@@ -135,99 +138,167 @@
 	   \-- silk-persistence 1.11.4
 	- skinrestorer 2.4.3+1.21.9-fabric
 	   \-- org_mineskin_java-client 3.0.6-SNAPSHOT
+	- terralith 2.5.13
 	- veinminer 2.5.0
 	   \-- de_miraculixx_core_dev 2.5.0
-[21:08:26] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/djbug/Downloads/Server-MineCriator-main/backend/data/servers/83604d60/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[21:08:26] [main/INFO]: Compatibility level set to JAVA_16
-[21:08:26] [main/INFO]: Compatibility level set to JAVA_21
-[21:08:27] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[21:08:32] [main/INFO]: Carregando extensões...
-[21:08:32] [main/INFO]: 0 extensão(ões) carregada
-[21:08:32] [main/INFO]: Initialize mod Library Ferret
-[21:08:32] [main/INFO]: Initialized mod Library Ferret
-[21:08:32] [main/INFO]: Initializing MagicVibeDecorationsMod
-[21:08:33] [main/INFO]: [ServerCore] Loaded V1.5.14+1.21.9!
-[21:08:33] [main/INFO]: Initializing Silk
-[21:08:33] [main/INFO]: Veinminer Version: 2.5.0 (fabric)
-[21:08:33] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[21:08:33] [main/INFO]: StructureSet modified for minecraft:village : Now using custom village configuration (can be disabled in the better villages config: boolean.villages.enabled_custom_config).
-[21:08:34] [DefaultDispatcher-worker-1/INFO]: [STDOUT]: [VeinminerUpdater] veinminer is up to date
-[21:08:34] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/beetrots' from 'placeable_food:loot_table/blocks/beetrots.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:beetrots': net.minecraft.class_52@766a60e8]
-[21:08:34] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/bp_5' from 'placeable_food:loot_table/blocks/bp_5.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:bp_5': net.minecraft.class_52@553e18a]
-[21:08:34] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/ms' from 'placeable_food:loot_table/blocks/ms.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms': net.minecraft.class_52@798e7d4f]
-[21:08:34] [Worker-Main-1/ERROR]: Couldn't parse data file 'placeable_food:mixrec_1' from 'placeable_food:recipe/mixrec_1.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms']
-[21:08:34] [Worker-Main-1/ERROR]: Couldn't parse data file 'placeable_food:mixrec_2' from 'placeable_food:recipe/mixrec_2.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms']
-[21:08:34] [main/INFO]: Loaded 1503 recipes
-[21:08:34] [main/INFO]: Loaded 1574 advancements
-[21:08:35] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 977.6 μs
-[21:08:35] [Server thread/INFO]: Initialized mcCoroutineScope (MinecraftServer as executor)
-[21:08:35] [Server thread/INFO]: Starting minecraft server version 1.21.9
-[21:08:35] [Server thread/INFO]: Loading properties
-[21:08:35] [Server thread/INFO]: Default game type: SURVIVAL
-[21:08:35] [Server thread/INFO]: Generating keypair
-[21:08:35] [Server thread/INFO]: Starting Minecraft server on *:2314
-[21:08:35] [Server thread/INFO]: Using epoll channel type
-[21:08:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[21:08:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[21:08:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[21:08:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[21:08:35] [e4mc_minecraft-init/INFO]: req: https://broker.e4mc.link/getBestRelay GET
-[21:08:35] [Server thread/INFO]: Preparing level "world"
-[21:08:35] [Server thread/INFO]: Loading 0 persistent chunks...
-[21:08:35] [Server thread/INFO]: Preparing spawn area: 100%
-[21:08:35] [Server thread/INFO]: Time elapsed: 90 ms
-[21:08:35] [Server thread/INFO]: Done (0.360s)! For help, type "help"
-[21:08:35] [Server thread/INFO]: Demorou 43ms para inicializar o Floodgate
-[21:08:36] [Server thread/INFO]: ******************************************
-[21:08:36] [Server thread/INFO]: 
-[21:08:36] [Server thread/INFO]: Carregando Geyser versão 2.9.2-b1008 (git-master-d35667a)
-[21:08:36] [Server thread/INFO]: 
-[21:08:36] [Server thread/INFO]: ******************************************
-[21:08:36] [e4mc_minecraft-init/INFO]: resp: (GET https://broker.e4mc.link/getBestRelay) 200
-[21:08:36] [e4mc_minecraft-init/INFO]: using relay cl
-[21:08:36] [e4mc_minecraft-init/INFO]: Using configured namedGroups -D 'jdk.tls.namedGroup': [secp384r1] 
-[21:08:36] [Netty Epoll Server IO #1/INFO]: control channel open: [id: 0x0f5c2f23, QuicStreamAddress{streamId=0}]
-[21:08:36] [Netty Epoll Server IO #1/INFO]: control channel write complete
-[21:08:37] [Netty Epoll Server IO #1/WARN]: e4mc running on Dedicated Server; This works, but isn't recommended as e4mc is designed for short-lived LAN servers
-[21:08:37] [Netty Epoll Server IO #1/INFO]: Domain assigned: baguette-fritter.cl.e4mc.link
-[21:08:38] [GeyserServer-3-1/INFO]: Geyser iniciado na porta UDP 19132
-[21:08:38] [Server thread/INFO]: Concluído (2,377 s)! Execute /geyser help para obter ajuda!
-[21:08:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2981ms or 59 ticks behind
-[21:09:22] [Server thread/INFO]: DJbug_[QuicStreamAddress{streamId=1}] logged in with entity id 47 at (-10.755638781662617, 110.0, -6.8627444886690245)
-[21:09:22] [Server thread/INFO]: DJbug_ joined the game
-[21:09:56] [Server thread/INFO]: DJbug_ has made the advancement [Monster Hunter]
-[21:13:59] [Server thread/INFO]: DJbug_ has made the advancement [Stone Age]
-[21:23:58] [Server thread/INFO]: Set the time to 1000
-[21:24:33] [Server thread/INFO]: Unknown item 'minecraft:chiquen'
-[21:24:33] [Server thread/INFO]: give @s chiquen<--[HERE]
-[21:25:22] [Server thread/INFO]: No player was found
-[21:25:31] [Server thread/INFO]: No player was found
-[21:25:48] [Server thread/INFO]: Unknown selector type '@D'
-[21:25:48] [Server thread/INFO]: give @DJbug_ chicken<--[HERE]
-[21:26:08] [Server thread/INFO]: No player was found
-[21:26:27] [Server thread/INFO]: Made DJbug_ a server operator
-[21:26:58] [Server thread/INFO]: [DJbug_: Gave 1 [Raw Chicken] to DJbug_]
-[21:28:05] [Server thread/INFO]: [DJbug_: Gave 10 [Raw Chicken] to DJbug_]
-[21:28:17] [Server thread/INFO]: Made DJbug_ no longer a server operator
-[21:29:05] [Server thread/INFO]: DJbug_ has made the advancement [Getting an Upgrade]
-[21:34:23] [Server thread/INFO]: Set the time to 1000
-[21:36:33] [Server thread/INFO]: DJbug_ lost connection: Disconnected
-[21:36:33] [Server thread/INFO]: DJbug_ left the game
-[21:36:34] [Server thread/INFO]: DJbug_[/127.0.0.1:44670] logged in with entity id 5106 at (-138.32892493234314, 77.0, -401.69999998807907)
-[21:36:34] [Server thread/INFO]: DJbug_ joined the game
-[21:36:42] [Server thread/INFO]: DJbug_ lost connection: Disconnected
-[21:36:42] [Server thread/INFO]: DJbug_ left the game
-[21:36:54] [Server thread/INFO]: Stopping the server
-[21:36:54] [Server thread/INFO]: Desligando o Geyser.
-[21:36:55] [Server thread/INFO]: Geyser encerrado com sucesso.
-[21:36:55] [WebSocketConnectReadThread-110/INFO]: The skin uploader has been closed
-[21:36:57] [Server thread/INFO]: Stopping server
-[21:36:57] [Server thread/INFO]: Saving players
-[21:36:57] [Server thread/INFO]: Saving worlds
-[21:36:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:36:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[21:36:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:36:57] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+	- villagespawnpoint 4.7
+[16:30:57] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/djbug/Downloads/Server-MineCriator-main/backend/data/servers/83604d60/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[16:30:57] [main/INFO]: Compatibility level set to JAVA_16
+[16:30:57] [main/INFO]: Compatibility level set to JAVA_21
+[16:30:57] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[16:31:02] [main/INFO]: Loading Collective version 8.9.
+[16:31:03] [main/INFO]: Carregando extensões...
+[16:31:03] [main/INFO]: 0 extensão(ões) carregada
+[16:31:03] [main/INFO]: Initialize mod Library Ferret
+[16:31:03] [main/INFO]: Initialized mod Library Ferret
+[16:31:03] [main/INFO]: Initializing MagicVibeDecorationsMod
+[16:31:03] [main/INFO]: [ServerCore] Loaded V1.5.14+1.21.9!
+[16:31:04] [main/INFO]: Initializing Silk
+[16:31:04] [main/INFO]: Veinminer Version: 2.5.0 (fabric)
+[16:31:04] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:31:04] [main/INFO]: Found new data pack collective, loading it automatically
+[16:31:04] [main/INFO]: Found new data pack improved_village_placement, loading it automatically
+[16:31:04] [main/INFO]: Found new data pack lithostitched, loading it automatically
+[16:31:04] [main/INFO]: Found new data pack terralith, loading it automatically
+[16:31:04] [DefaultDispatcher-worker-3/INFO]: [STDOUT]: [VeinminerUpdater] veinminer is up to date
+[16:31:04] [main/INFO]: StructureSet modified for minecraft:village : Now using custom village configuration (can be disabled in the better villages config: boolean.villages.enabled_custom_config).
+[16:31:05] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/beetrots' from 'placeable_food:loot_table/blocks/beetrots.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:beetrots': net.minecraft.class_52@63151756]
+[16:31:05] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/bp_5' from 'placeable_food:loot_table/blocks/bp_5.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:bp_5': net.minecraft.class_52@26cbe863]
+[16:31:05] [Worker-Main-3/ERROR]: Couldn't parse data file 'placeable_food:blocks/ms' from 'placeable_food:loot_table/blocks/ms.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms': net.minecraft.class_52@57b0bde5]
+[16:31:05] [Worker-Main-1/ERROR]: Couldn't parse data file 'placeable_food:mixrec_1' from 'placeable_food:recipe/mixrec_1.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms']
+[16:31:05] [Worker-Main-1/ERROR]: Couldn't parse data file 'placeable_food:mixrec_2' from 'placeable_food:recipe/mixrec_2.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: placeable_food:ms']
+[16:31:05] [main/INFO]: Loaded 1509 recipes
+[16:31:05] [main/INFO]: Loaded 1575 advancements
+[16:31:06] [main/INFO]: Applied 0 biome modifications to 0 of 160 new biomes in 2.355 ms
+[16:31:06] [Server thread/INFO]: Initialized mcCoroutineScope (MinecraftServer as executor)
+[16:31:06] [Server thread/INFO]: Starting minecraft server version 1.21.9
+[16:31:06] [Server thread/INFO]: Loading properties
+[16:31:06] [Server thread/INFO]: Default game type: SURVIVAL
+[16:31:06] [Server thread/INFO]: Generating keypair
+[16:31:06] [Server thread/INFO]: Starting Minecraft server on *:2314
+[16:31:06] [Server thread/INFO]: Using epoll channel type
+[16:31:06] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:31:06] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:31:06] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:31:06] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:31:06] [e4mc_minecraft-init/INFO]: req: https://broker.e4mc.link/getBestRelay GET
+[16:31:06] [Server thread/INFO]: Preparing level "world"
+[16:31:06] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:31:06] [Server thread/INFO]: Preparing spawn area: 100%
+[16:31:06] [Server thread/INFO]: Time elapsed: 57 ms
+[16:31:06] [Server thread/INFO]: Done (0.367s)! For help, type "help"
+[16:31:06] [Server thread/INFO]: Demorou 47ms para inicializar o Floodgate
+[16:31:06] [e4mc_minecraft-init/INFO]: resp: (GET https://broker.e4mc.link/getBestRelay) 200
+[16:31:06] [e4mc_minecraft-init/INFO]: using relay cl
+[16:31:07] [Netty Epoll Server IO #1/INFO]: control channel open: [id: 0x953f76f6, QuicStreamAddress{streamId=0}]
+[16:31:07] [Netty Epoll Server IO #1/INFO]: control channel write complete
+[16:31:07] [Server thread/INFO]: ******************************************
+[16:31:07] [Server thread/INFO]: 
+[16:31:07] [Server thread/INFO]: Carregando Geyser versão 2.9.2-b1008 (git-master-d35667a)
+[16:31:07] [Server thread/INFO]: 
+[16:31:07] [Server thread/INFO]: ******************************************
+[16:31:07] [Netty Epoll Server IO #1/WARN]: e4mc running on Dedicated Server; This works, but isn't recommended as e4mc is designed for short-lived LAN servers
+[16:31:07] [Netty Epoll Server IO #1/INFO]: Domain assigned: backing-tidy.cl.e4mc.link
+[16:31:09] [GeyserServer-3-1/INFO]: Geyser iniciado na porta UDP 19132
+[16:31:09] [Server thread/INFO]: Concluído (2,507 s)! Execute /geyser help para obter ajuda!
+[16:31:09] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3205ms or 64 ticks behind
+[16:32:09] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[16:35:53] [Server thread/INFO]: DJbug_[/127.0.0.1:58266] logged in with entity id 65 at (5.295868001701376, 103.0, -5.423695227911379)
+[16:35:53] [Server thread/INFO]: DJbug_ joined the game
+[16:35:59] [Server thread/INFO]: DJbug_ lost connection: Disconnected
+[16:35:59] [Server thread/INFO]: DJbug_ left the game
+[16:36:12] [GeyserServerChild-4-1/INFO]: Jogador conectado com o nome de usuário Tokyto7125 (898)
+[16:36:12] [localSession-7-1/INFO]: Tokyto7125 (logado como: Tokyto7125) conectou-se ao servidor Java
+[16:36:12] [pool-6-thread-1/INFO]: Floodgate player who is logged in as .Tokyto7125 00000000-0000-0000-0009-01f251a5cd76 joined
+[16:36:13] [ForkJoinPool.commonPool-worker-8/WARN]: Failed to fetch skin 'mojang:.Tokyto7125'
+java.lang.IllegalStateException: not found
+	at knot/net.lionarius.skinrestorer.util.WebUtils.throwOnClientErrors(WebUtils.java:77) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.getProfile(MojangSkinProvider.java:145) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.lionarius.skinrestorer.skin.provider.MojangSkinProvider$1.findProfileByName(MojangSkinProvider.java:69) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.minecraft.class_3312.method_14509(class_3312.java:74) ~[server-intermediary.jar:?]
+	at knot/net.minecraft.class_3312.method_14515(class_3312.java:135) ~[server-intermediary.jar:?]
+	at knot/net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.fetchSkin(MojangSkinProvider.java:116) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.minecraft.class_3248.mdd92603$skinrestorer$lambda$skinrestorer$fetchSkin$1$1(class_3248.java:2078) ~[server-intermediary.jar:?]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[?:?]
+	at knot/net.minecraft.class_3248.skinrestorer$fetchSkin(class_3248.java:2077) ~[server-intermediary.jar:?]
+	at knot/net.minecraft.class_3248.mdd92603$skinrestorer$lambda$waitForSkin$0$2(class_3248.java:2062) ~[server-intermediary.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[16:36:13] [Geyser Fabric connection thread-6-2/INFO]: Jogador do Floodgate conectado como .Tokyto7125 desconectado
+[16:36:13] [Server thread/INFO]: .Tokyto7125 (00000000-0000-0000-0009-01f251a5cd76) lost connection: This server requires Fabric Loader and Fabric API installed on your client!
+The following registry entry namespaces may be related:
+
+libraryferret
+placeable_food
+
+
+Contact the server's administrator for more information!
+[16:36:13] [localSession-7-1/INFO]: Tokyto7125 se desconectou do servidor Java: This server requires §r§aFabric Loader and Fabric API§r installed on your client!
+The following registry entry namespaces may be related:
+
+§r§elibraryferret§r
+§r§eplaceable_food§r
+
+
+§r§6Contact the server's administrator for more information!
+[16:36:13] [Server thread/WARN]: handleDisconnection() called twice
+[16:36:59] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[16:37:45] [GeyserServerChild-4-2/INFO]: Jogador conectado com o nome de usuário Tokyto7125 (898)
+[16:37:45] [localSession-7-2/INFO]: Tokyto7125 (logado como: Tokyto7125) conectou-se ao servidor Java
+[16:37:45] [pool-6-thread-2/INFO]: Floodgate player who is logged in as .Tokyto7125 00000000-0000-0000-0009-01f251a5cd76 joined
+[16:37:46] [ForkJoinPool.commonPool-worker-6/WARN]: Failed to fetch skin 'mojang:.Tokyto7125'
+java.lang.IllegalStateException: not found
+	at knot/net.lionarius.skinrestorer.util.WebUtils.throwOnClientErrors(WebUtils.java:77) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.getProfile(MojangSkinProvider.java:145) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.lionarius.skinrestorer.skin.provider.MojangSkinProvider$1.findProfileByName(MojangSkinProvider.java:69) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.minecraft.class_3312.method_14509(class_3312.java:74) ~[server-intermediary.jar:?]
+	at knot/net.minecraft.class_3312.method_14515(class_3312.java:135) ~[server-intermediary.jar:?]
+	at knot/net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.fetchSkin(MojangSkinProvider.java:116) ~[skinrestorer-2.4.3+1.21.9-fabric.jar:?]
+	at knot/net.minecraft.class_3248.mdd92603$skinrestorer$lambda$skinrestorer$fetchSkin$1$1(class_3248.java:2078) ~[server-intermediary.jar:?]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[?:?]
+	at knot/net.minecraft.class_3248.skinrestorer$fetchSkin(class_3248.java:2077) ~[server-intermediary.jar:?]
+	at knot/net.minecraft.class_3248.mdd92603$skinrestorer$lambda$waitForSkin$0$2(class_3248.java:2062) ~[server-intermediary.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[16:37:46] [Geyser Fabric connection thread-6-3/INFO]: Jogador do Floodgate conectado como .Tokyto7125 desconectado
+[16:37:46] [Server thread/INFO]: .Tokyto7125 (00000000-0000-0000-0009-01f251a5cd76) lost connection: This server requires Fabric Loader and Fabric API installed on your client!
+The following registry entry namespaces may be related:
+
+libraryferret
+placeable_food
+
+
+Contact the server's administrator for more information!
+[16:37:46] [localSession-7-2/INFO]: Tokyto7125 se desconectou do servidor Java: This server requires §r§aFabric Loader and Fabric API§r installed on your client!
+The following registry entry namespaces may be related:
+
+§r§elibraryferret§r
+§r§eplaceable_food§r
+
+
+§r§6Contact the server's administrator for more information!
+[16:37:46] [Server thread/WARN]: handleDisconnection() called twice
+[16:38:47] [Server thread/INFO]: Stopping the server
+[16:38:47] [Server thread/INFO]: Desligando o Geyser.
+[16:38:47] [Server thread/INFO]: Geyser encerrado com sucesso.
+[16:38:47] [WebSocketConnectReadThread-119/INFO]: The skin uploader has been closed
+[16:38:49] [Server thread/INFO]: Stopping server
+[16:38:49] [Server thread/INFO]: Saving players
+[16:38:49] [Server thread/INFO]: Saving worlds
+[16:38:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:38:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[16:38:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[16:38:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:38:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:38:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:38:49] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

@@ -1,4 +1,4 @@
-# 🚀 MineCriator - Como Usar
+# 🚀 MineHost Local - Como Usar
 
 ## Iniciando a Aplicação
 
@@ -27,12 +27,12 @@ python -m uvicorn backend.server:app --host 127.0.0.1 --port 5000
 Depois, em outro terminal:
 ```bash
 cd /home/djbug/Downloads/Server-MineCriator-main/frontend/dist
-./MineCriator-0.1.0.AppImage
+./MineHostLocal-0.1.0.AppImage
 ```
 
 ### Opção 3: Instalar como Sistema (DEB)
 ```bash
-sudo dpkg -i /home/djbug/Downloads/Server-MineCriator-main/frontend/dist/frontend_0.1.0_amd64.deb
+sudo dpkg -i /home/djbug/Downloads/Server-MineCriator-main/frontend/dist/minehostlocal_0.1.0_amd64.deb
 ```
 
 Depois procure por "MineCriator" no menu de aplicações.

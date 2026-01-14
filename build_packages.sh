@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Iniciando build do MineCriator (AppImage + DEB)..."
+echo "🚀 Iniciando build do MineHost Local (AppImage + DEB)..."
 echo ""
 
 cd /home/djbug/Downloads/Server-MineCriator-main/frontend
@@ -30,5 +30,5 @@ ls -lh dist/*.{deb,AppImage} 2>/dev/null || echo "Aguardando geração de arquiv
 
 echo ""
 echo "🎯 Próximas etapas:"
-echo "1. Instalar via DEB: sudo dpkg -i dist/MineCriator-*.deb"
-echo "2. OU executar AppImage: ./dist/MineCriator-*.AppImage"
+echo "1. Instalar via DEB: sudo dpkg -i dist/MineHost-Local-*.deb"
+echo "2. OU executar AppImage: ./dist/MineHost-Local-*.AppImage"

@@ -1,0 +1,13 @@
+[16:45:43] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-90-generic (amd64)
+[16:45:43] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.9-59-main@0ff899d (2025-10-07T11:49:59Z) for Minecraft 1.21.9
+[16:45:43] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:45:43] [Paper Plugin Remapper Thread - 1/INFO]: [ReobfServer] Remapping server...
+[16:45:50] [Paper Plugin Remapper Thread - 1/INFO]: [ReobfServer] Done remapping server in 6546ms.
+[16:45:50] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/spigot-1.0.2.jar'...
+[16:45:50] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/spigot-1.0.2.jar' in 178ms.
+[16:45:50] [ServerMain/INFO]: [PluginInitializerManager] Initialized 2 plugins
+[16:45:50] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - Geyser-Spigot (2.9.2-SNAPSHOT), GeyserUpdater (1.0.0)
+[16:45:58] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:45:59] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[16:45:59] [ServerMain/INFO]: Found new data pack paper, loading it automatically

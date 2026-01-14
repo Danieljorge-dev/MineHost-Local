@@ -1,0 +1,3 @@
+# EULA accepted via MineHost Local
+# 2026-01-13T19:43:03.834033+00:00
+eula=true

@@ -1,7 +1,7 @@
 {
-  "name": "MineCriator",
+  "name": "MineHost-Local",
   "version": "1.0.1",
-  "description": "MineCriator - Minecraft Server Manager Desktop App",
+  "description": "MineHost Local - Minecraft Server Manager Desktop App",
   "author": {
     "name": "Danieljorge-dev",
     "email": "dev@minecriaor.local"
@@ -110,8 +110,8 @@
     "wait-on": "^7.2.0"
   },
   "build": {
-    "appId": "com.minecriaor.app",
-    "productName": "MineCriator",
+    "appId": "com.minehostlocal.app",
+    "productName": "MineHost Local",
     "files": [
       "build/**/*",
       "node_modules/**/*"

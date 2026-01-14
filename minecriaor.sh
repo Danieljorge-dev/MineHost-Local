@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🚀 Iniciando MineCriator Server Manager..."
+echo "🚀 Iniciando MineHost Local Server Manager..."
 echo ""
 
 # Cores para output
@@ -21,12 +21,12 @@ APP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Cleanup function
 cleanup() {
   echo ""
-  echo -e "${YELLOW}ℹ${NC} Finalizando MineCriator..."
+  echo -e "${YELLOW}ℹ${NC} Finalizando MineHost Local..."
   if [ ! -z "$BACKEND_PID" ] && kill -0 $BACKEND_PID 2>/dev/null; then
     kill $BACKEND_PID 2>/dev/null || true
     wait $BACKEND_PID 2>/dev/null || true
   fi
-  echo -e "${GREEN}✓${NC} MineCriator finalizado!"
+  echo -e "${GREEN}✓${NC} MineHost Local finalizado!"
   exit 0
 }
 
@@ -78,10 +78,10 @@ fi
 echo ""
 
 # 2. Iniciar Frontend (AppImage)
-echo -e "${BLUE}[2/2]${NC} Iniciando Interface MineCriator..."
+echo -e "${BLUE}[2/2]${NC} Iniciando Interface MineHost Local..."
 cd "$APP_DIR/frontend/dist"
 
-if [ -f "MineCriator-0.1.0.AppImage" ]; then
+if [ -f "MineHost-Local-0.1.0.AppImage" ]; then
   chmod +x MineCriator-0.1.0.AppImage
   ./MineCriator-0.1.0.AppImage
 elif [ -f "$APP_DIR/frontend/dist/MineCriator-0.1.0.AppImage" ]; then

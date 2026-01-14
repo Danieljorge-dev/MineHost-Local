@@ -1,2 +1,2 @@
 # MineHost-Local
-Minecriator - Minecraft Server Manager Desktop App
+MineHost Local - Minecraft Server Manager Desktop App
