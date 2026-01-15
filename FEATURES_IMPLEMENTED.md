@@ -2,14 +2,7 @@ min# 🎉 MineCriator - Build Completo!
 
 ## ✅ O que foi implementado:
 
-### 1. **Remoção Total de Emergente AI**
-- ✅ Removido badge/logo de Emergent 
-- ✅ Removido scripts `emergent-main.js` e `debug-monitor.js`
-- ✅ Removido analytics PostHog
-- ✅ Removido domínios emergent.sh e emergentagent.com do CORS
-- ✅ Atualizado title/description da aplicação
-
-### 2. **Funcionalidades de Mods Implementadas**
+### 1. **Funcionalidades de Mods Implementadas**
 
 #### **Backend (Python/FastAPI):**
 ```python
@@ -40,7 +33,7 @@ Funcionalidades adicionadas:
 ✅ Status verde (instalado) / vermelho (faltando) para dependências
 ```
 
-### 3. **Desktop App com Electron**
+### 2. **Desktop App com Electron**
 - ✅ Installado Electron e electron-builder
 - ✅ Criado main.js e preload.js
 - ✅ Backend inicia automaticamente ao abrir o app
